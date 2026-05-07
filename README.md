@@ -1,22 +1,66 @@
-# CSCI 3329 — Homework 3 Report
-## 1. Dataset
-- Name / source / number of samples / number of classes
-- Class distribution (table or bar chart)
-## 2. Preprocessing
-- Missing-value handling
-- Encoding and scaling decisions, with rationale
-## 3. Part 2 — Algorithm Comparison
-| Algorithm | Mean Accuracy | Std |
-|-----------|---------------|-----|
-| ... | ... | ... |
-## 4. Part 3 — Feature Selection
-- Search method and justification
+# CSCI 3329 - Homework 3 Report
+
+## First-Order Theorem Proving: Heuristic Selection for Automated Reasoning
+
+### 1. Dataset Description
+
+- **Name**: [First-Order Theorem Proving Dataset](https://archive.ics.uci.edu/dataset/249/first+order+theorem+proving) 
+- **Source**: UCI ML Repository
+- **Number of samples**: 6,118 total (3,059 train, 1,529 validation, 1,530 test)
+- **Number of features**: 51 (13 static + 38 dynamic features)
+- **Number of classes**: 6 (5 heuristics + decline option)
+
+**Class Distribution:**
+| Class | Description | Count | Percentage |
+|-------|-------------|-------|------------|
+| H0 | Decline (no proof) | 2,554 | 41.7% |
+| H1 | Heuristic 1 | 1,089 | 17.8% |
+| H2 | Heuristic 2 | 486 | 7.9% |
+| H3 | Heuristic 3 | 748 | 12.2% |
+| H4 | Heuristic 4 | 617 | 10.1% |
+| H5 | Heuristic 5 | 624 | 10.2% |
+
+### 2. Preprocessing
+
+- **Missing values**: None reported in dataset documentation
+- **Irrelevant columns**: Removed source column after splitting
+- **Encoding**: Target converted from one-hot to single label (0-5)
+- **Scaling**: StandardScaler (zero mean, unit variance) - critical for KNN and MLP
+
+### 3. Part 2 - Algorithm Comparison
+
+| Algorithm | Mean Accuracy | Std Dev |
+|-----------|---------------|---------|
+| Perceptron | 0.xxxx | 0.xxxx |
+| Logistic Regression | 0.xxxx | 0.xxxx |
+| KNN | 0.xxxx | 0.xxxx |
+| Gaussian NB | 0.xxxx | 0.xxxx | 
+| Neural Network | 0.xxxx | 0.xxxx |
+
+### 4. Part 3 - Feature Selection
+
+**Search Method**: Forward Selection (51 features > 15, exhaustive infeasible)
+
 | Algorithm | Best Feature Subset | Mean Accuracy | Std |
-|-----------|--------------------|---------------|-----|
-## 5. Discussion
-- Part 2 vs Part 3 comparison
-- Per-algorithm observations
-- Limitations and ideas for improvement
-## 6. Reproduction
-- Python version, key library versions
-- Run command (e.g., `python main.py`)
+|-----------|---------------------|---------|-----|
+| Perceptron | [list] | 0.xxxx | 0.xxxx |
+| Logistic Regression | [list] | 0.xxxx | 0.xxxx |
+| KNN | [list] | 0.xxxx | 0.xxxx | 
+| Gaussian NB | [list] | 0.xxxx | 0.xxxx |
+| Neural Network | [list] | 0.xxxx | 0.xxxx |
+
+### 5. Discussion
+
+
+
+### 6. Reproduction
+
+```bash
+# Python version
+python --version  # 3.10+
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run experiment
+python homework3.py

@@ -48,17 +48,17 @@
 | Neural Network | 7 | 0.4354 | 0.0235 |
 
 ### 5. Discussion
-
-
+**Part 2 vs Part 3 Comparison**
+  Logistic Regression showed greater improvement with the highest increase in accuracy, after reducing features from 51 to 19. Gaussian Naive Bayes also benefited beacause removing features in the way helped for better estimates. The Perceptron showed a small change which also simplified some parts. K-Nearest Neighbors demonstrated also a slight improvement, as fewer features reduced some of the impact on the calculations. Finally, Neural Network was the only algorithm that stayed pretty much the same based on the data. Overall, feature selection helped all of the algorithms, while also reducing feature counts by 50-70%.
 
 ### 6. Reproduction
 
 ```bash
-# Python version
+#Python version
 python --version  # 3.10+
 
-# Install dependencies
+#Install dependencies
 pip install -r requirements.txt
 
-# Run experiment
+#Run experiment
 python homework3.py

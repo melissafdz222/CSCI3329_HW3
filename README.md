@@ -37,7 +37,7 @@
 
 ### 4. Part 3 - Feature Selection
 
-**Search Method**: Forward Selection (51 features > 15, exhaustive infeasible)
+**Search Method**: Forward Selection (51 features > 15)
 
 | Algorithm | Best Feature Subset | Mean Accuracy | Std |
 |-----------|---------------------|---------|-----|

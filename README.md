@@ -31,8 +31,8 @@
 |-----------|---------------|---------|
 | Perceptron | 0.3521 | 0.0424 |
 | Logistic Regression | 0.4654 | 0.0269|
-| KNN | 0.5300 |  |
-| Gaussian NB | 0.1638 | 0.0262 | 
+| KNN | 0.5300 | 0.0262  |
+| Gaussian NB | 0.1638 | 0.0209 | 
 | Neural Network | 0.4720 | 0.0287 |
 
 ### 4. Part 3 - Feature Selection

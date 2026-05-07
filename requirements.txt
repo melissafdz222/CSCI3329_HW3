@@ -1,0 +1,5 @@
+#You need to install the following packages to run the code in homework3.py
+
+pandas >= 1.3.0
+numpy >= 1.21.0
+scikit-learn >= 1.3.0
